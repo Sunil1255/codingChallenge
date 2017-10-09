@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Xkq-vo-mJ0">
+                                <rect key="frame" x="3" y="-2" width="406" height="738"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coding Challange " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BN6-oD-PxF">
+                                <rect key="frame" x="97.666666666666686" y="342" width="219" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="rKg-4g-tyc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Sunil Chowdary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bbc-Cm-gIR">
+                                <rect key="frame" x="88" y="386" width="251" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="PsR-3N-Bm2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Youtube-icon" translatesAutoresizingMaskIntoConstraints="NO" id="1cQ-Cv-c7k">
+                                <rect key="frame" x="146.66666666666669" y="127" width="120.00000000000006" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="AA2-jF-wOJ"/>
+                                    <constraint firstAttribute="height" constant="120" id="pQI-wX-nI3"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xkq-vo-mJ0" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-22" id="5op-Jh-opo"/>
+                            <constraint firstItem="BN6-oD-PxF" firstAttribute="top" secondItem="1cQ-Cv-c7k" secondAttribute="bottom" constant="95" id="IgF-ch-Wiy"/>
+                            <constraint firstItem="Xkq-vo-mJ0" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-17" id="PeT-a0-weE"/>
+                            <constraint firstItem="bbc-Cm-gIR" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="68" id="Vzx-Gv-FPy"/>
+                            <constraint firstItem="BN6-oD-PxF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ZW6-jn-J3R"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bbc-Cm-gIR" secondAttribute="trailing" constant="55" id="bK3-Av-dYl"/>
+                            <constraint firstItem="Xkq-vo-mJ0" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="bgN-eY-A9O"/>
+                            <constraint firstItem="bbc-Cm-gIR" firstAttribute="top" secondItem="BN6-oD-PxF" secondAttribute="bottom" constant="14" id="hjc-4G-jfl"/>
+                            <constraint firstItem="1cQ-Cv-c7k" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="107" id="qOT-s4-Ela"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xkq-vo-mJ0" secondAttribute="trailing" constant="-15" id="xhI-pQ-sWj"/>
+                            <constraint firstItem="Xkq-vo-mJ0" firstAttribute="centerX" secondItem="1cQ-Cv-c7k" secondAttribute="centerX" id="xkm-1h-smX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Youtube-icon" width="200" height="200"/>
+        <image name="bg" width="213" height="378"/>
+    </resources>
+</document>
